@@ -1,5 +1,6 @@
+#! .env/bin/python
 # -*- coding: UTF-8 -*-
-from __future__ import unicode_literals, print_function, division
+
 import sys
 from redis import Redis
 from rq import Queue
