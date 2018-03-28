@@ -11,17 +11,25 @@ Github asynchronous mirror helper
 ```shell
 git clone --mirror git@github.com:xxx/xxx.git
 ```
-4. add `post-receive` hook for xxx.git project
+
+4. install gpusher
+
+```shell
+git clone https://github.com/dawncold/gpusher.git
+```
+
+5. add `post-receive` hook for xxx.git project
 
 ```shell
 #!/bin/sh
 
 echo "Mirror to GitHub"
-/path/to/gpusher/cli.py `pwd`
+/path/to/gpusher/cli.sh `pwd`
 
 exec git update-server-info
 ```
-5. start gpusher worker
+
+6. start gpusher worker
 
 ```shell
 cd /path/to/gpusher
