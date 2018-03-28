@@ -2,4 +2,4 @@
 
 BASEDIR=$(dirname "$0")
 source ${BASEDIR}/.env/bin/activate
-python ${BASEDIR}/cli.py $@
+python ${BASEDIR}/enqueue.py $@
